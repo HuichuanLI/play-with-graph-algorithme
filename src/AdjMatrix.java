@@ -65,7 +65,7 @@ public class AdjMatrix {
         return result;
     }
 
-    public int degree(int v) {
+    public int degree(int v) {  
         return adj(v).size();
     }
 
