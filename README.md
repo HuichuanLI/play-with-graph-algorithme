@@ -64,3 +64,7 @@
 
 [实现code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AdjMatrix.java)
 
+复杂度
+
+![photo](13.png)
+可以优化空间复杂度
