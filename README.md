@@ -84,3 +84,30 @@
 ![photo](17.png)
 [实现code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AdjList.java)
 
+## 空间复杂度
+	空间复杂度，O(V+E)
+	如果是 树的话 O（2E+1）= O(E)
+	如果是完全图的话 O（v*(V-1)/2 + E）= O(E)
+	但是 不能写O(E) 如果不联通
+
+## 时间复杂度：
+	建图：O(E*V)  和邻接矩阵 相差了v
+	看两点是否相邻 ：O(degree(v))  原来是O(1)
+	求一个点的相邻节点 : O(degree(v)) 只需要遍历所有相邻节点个数
+	快速查重 
+	快速查看两点是否相邻
+	不要使用链表 HashSet O(1)
+	红黑树 TreeSet O(logv)
+
+
+
+	
+
+
+	
+
+
+
+
+
+
