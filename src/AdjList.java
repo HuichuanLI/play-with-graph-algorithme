@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.LinkedList;
 
 
-public class AdjList {
+public class AdjList implements GraphInterface {
 
     private int V;
     private int E;

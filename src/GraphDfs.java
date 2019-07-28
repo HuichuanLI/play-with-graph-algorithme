@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class GraphDfs {
 
 
-    private Graph G;
+    private GraphInterface G;
     private ArrayList<Integer> pre = new ArrayList<>();
     private ArrayList<Integer> post = new ArrayList<>();
     private boolean[] visited;
 
-    public GraphDfs(Graph G) {
+    public GraphDfs(GraphInterface G) {
 
         this.G = G;
         visited = new boolean[G.V()];

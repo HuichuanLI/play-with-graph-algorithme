@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 /// 暂时只支持无向无权图
-public class Graph {
+public class Graph implements GraphInterface {
 
     private int V;
     private int E;
