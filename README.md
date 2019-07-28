@@ -116,12 +116,11 @@ hash 表 HashSet O(1)
 算法优化 使用红黑树而对于java使用[TreeSet](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AdjSet.java)
 
 
+## 算法复杂度
+![photo](18.png)
 
-
-
-
-	
-
+我们可以看出来邻接表，在其他方面都是优于其他的表示方法。
+所以我们接下来，都是使用邻接表。
 
 	
 
