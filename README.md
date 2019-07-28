@@ -174,4 +174,9 @@ hash 表 HashSet O(1)
 
 因此，整体，遍历所有顶点的所有邻边，需要的时间复杂度是O(V^2)的。
 
-代码实现 
+代码实现 [ADJDFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/adjMatrixDFS.java)
+
+使用图的接口 : [Interface](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/GraphInterface.java)
+
+
+大家可以看到，我们写的DFS算法类，其实封装的非常好，只需要简单的将类中传入的所有Graph类型（对应第二章中AdjSet的实现），修改为AdjMatrix，就可以完全正确地执行针对链接矩阵AdjMatrix的深度优先遍历了。
