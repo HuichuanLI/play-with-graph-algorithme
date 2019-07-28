@@ -156,7 +156,7 @@ hash 表 HashSet O(1)
 
 类似的 我们可以推导后续遍历
 
-![photo](22.png)
+![photo](22.png)        
 
 
 
@@ -174,9 +174,48 @@ hash 表 HashSet O(1)
 
 因此，整体，遍历所有顶点的所有邻边，需要的时间复杂度是O(V^2)的。
 
-代码实现 [ADJDFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/adjMatrixDFS.java)
+代码实现 : [ADJDFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/adjMatrixDFS.java)
 
 使用图的接口 : [Interface](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/GraphInterface.java)
 
 
 大家可以看到，我们写的DFS算法类，其实封装的非常好，只需要简单的将类中传入的所有Graph类型（对应第二章中AdjSet的实现），修改为AdjMatrix，就可以完全正确地执行针对链接矩阵AdjMatrix的深度优先遍历了。
+
+
+关于图的非递归的深度优先遍历
+
+首先先复习一下，使用栈，树的非递归的实现, 如 Leetcode 144 
+
+    // 深度优先遍历的非递归实现，需要使用一个栈
+    Stack&lt;TreeNode&gt; stack = new Stack&lt;TreeNode&gt;();
+    // 栈中首先压入根节点root
+    stack.push(root);
+    
+    // 只要栈不为空，说明还有未被遍历的节点
+    while(!stack.empty()){
+
+    // 遍历栈顶元素
+    TreeNode curNode = stack.pop();
+    // 在这个例子中，遍历的方式是将该节点的值放入一个线性表res中
+    res.add(curNode.val); 
+
+    // 之后，把当前节点的左右孩子压入栈中，等待后续的遍历
+    if(curNode.right != null)
+        stack.push(curNode.right);
+    if(curNode.left != null)
+        stack.push(curNode.left);
+    }
+    
+那么对于这种来其实一样。
+
+实现代码：[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/GraphDFSnr.java)
+
+注意这里的结果和以前的不一样
+
+递归 ：
+    [0, 1, 3, 2, 6, 5, 4 ] 
+
+非递归 ： 
+    [0, 2, 1, 3, 5, 4, 6]
+
+其实很简单。因为非递归的过程，我们是将一个顶点的相邻顶点压入栈中，取出的时候，是反向的；而递归没有这个问题，我们会按照adj(v)返回的列表的顺序，依次做深度优先遍历。+在这里，对此有疑问的同学，强烈建议实际对这两个程序进行一下单步跟踪，仔细理解一下，为什么会产生不一样的结果？通过但不跟踪，了解算法的每一步在做什么，每一步变量都发生了怎样的变化，怎样一点一点得到了最终的结果，这可是学习算法的重要方式哦。很多时候，顿悟，就发生在这个过程中：）+当然了，其实，这两个结果，都是图的深度优先遍历的结果，在下一章，我们讲解图的深度优先遍历的应用的时候，同学们就会看到，这个顺序，对于绝大多数应用，都是无所谓的：）
