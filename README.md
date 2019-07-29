@@ -233,3 +233,17 @@ hash 表 HashSet O(1)
 代码：可以通过深度优先遍历，查看哪些是联通分量
 
 [code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CC.java)
+
+
+## 路径问题 
+
+两点在同一个联通分量， 意味着两点间有路径
+
+
+路径怎么求 
+
+![photo](24.png) 
+
+对应这种问题，我们向对来说，只能求从0到那个节点有路径，从某个点出发，到任意位置的路径，单源路径。
+
+[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/SingleSourcePath.java)
