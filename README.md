@@ -247,3 +247,8 @@ hash 表 HashSet O(1)
 对应这种问题，我们向对来说，只能求从0到那个节点有路径，从某个点出发，到任意位置的路径，单源路径。
 
 [code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/SingleSourcePath.java)
+
+那么我们现在只是解决了单源问题，但是没解决多源问题，所以如何解决所有点路径的问题。
+
+我们其实全部遍历点就好了，创建一个SingleSourcePath 数组
+
