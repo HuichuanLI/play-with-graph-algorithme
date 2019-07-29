@@ -231,4 +231,5 @@ hash 表 HashSet O(1)
 ![photo](23.png) 
 
 代码：可以通过深度优先遍历，查看哪些是联通分量
-    
+
+[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CC.java)
