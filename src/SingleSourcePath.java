@@ -54,7 +54,7 @@ public class SingleSourcePath {
         Graph g = new Graph("/Users/hui/Desktop/java/play-with-graph-algorithme/g.txt");
         SingleSourcePath sspath = new SingleSourcePath(g, 0);
         System.out.println("0->6:" + sspath.path(6));
-        System.out.println("0->5:" + sspath.path(6));
+        System.out.println("0->5:" + sspath.path(5));
 
 
     }
