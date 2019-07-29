@@ -252,3 +252,11 @@ hash 表 HashSet O(1)
 
 我们其实全部遍历点就好了，创建一个SingleSourcePath 数组
 
+
+[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AllPairsPath.java)
+
+对于递归提前结束，没必要全部都遍历
+
+[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/Path.java)
+
+
