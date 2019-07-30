@@ -283,3 +283,12 @@ hash 表 HashSet O(1)
 
 ![photo](27.png) 
  
+[BiparitionDecetion](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/BipartitionDecetion.java)
+
+同构图
+
+NP 难 不能再多项式的问题是解决不了，但是无法证明是指数复杂度解决。
+
+平面图
+
+
