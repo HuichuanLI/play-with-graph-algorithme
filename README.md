@@ -246,17 +246,40 @@ hash 表 HashSet O(1)
 
 对应这种问题，我们向对来说，只能求从0到那个节点有路径，从某个点出发，到任意位置的路径，单源路径。
 
-[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/SingleSourcePath.java)
+[SingleSourcePath](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/SingleSourcePath.java)
 
 那么我们现在只是解决了单源问题，但是没解决多源问题，所以如何解决所有点路径的问题。
 
 我们其实全部遍历点就好了，创建一个SingleSourcePath 数组
 
 
-[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AllPairsPath.java)
+[AllPairsPath](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AllPairsPath.java)
 
 对于递归提前结束，没必要全部都遍历
 
-[code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/Path.java)
+[Path](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/Path.java)
 
 
+## 检测无向图中的环
+
+[CycleDetection](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CycleDetection.java)
+
+在这一小节，我们实现了无向图的环检测代码。那么现在能不能实现一个简单的算法逻辑，来判断，给定的一张图，是否是一棵树?
+
+必须保证图是联通的，同时没有环，才能说明这张图是一棵树。
+
+在这一章，我们已经封装了求解图的连通分量的 CC 类，和环检测 CycleDetection 类,其实就可以判断一个图是不是树。
+
+
+## 二分图检测
+
+![photo](25.png) 
+
+
+![photo](26.png) 
+
+左右两边是一样的，其实无非就是染色。
+
+
+![photo](27.png) 
+ 
