@@ -301,4 +301,8 @@ NP 难 不能再多项式的问题是解决不了，但是无法证明是指数�
 [BFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/GraphBFS.java)
 
 
+复杂度 O(V+E)
 
+和深度优先遍历是一样的，如果是联通图的情况就是 O(E)
+
+无非就是顺序不一样。
