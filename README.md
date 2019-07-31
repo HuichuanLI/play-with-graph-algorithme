@@ -292,3 +292,13 @@ NP 难 不能再多项式的问题是解决不了，但是无法证明是指数�
 平面图
 
 
+# 广度优先遍历
+
+回顾树的优先遍历，其实就是一个队列，实现每次将这个节点的孩子节点放入队列中，最终当队列空了，就说明
+树已经全部遍历过。对于一个节点，将所有的节点都遍历一边。
+
+
+[BFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/GraphBFS.java)
+
+
+
