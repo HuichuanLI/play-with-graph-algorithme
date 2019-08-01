@@ -323,3 +323,35 @@ BFS : 0->6:[0, 2, 6]
 [SingleSourcePathBFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/SingleSourcePathBFS.java)
 
 
+## 使用 BFS 解决联通分量问题
+
+如果大家实际尝试一下，就会发现，这其实是非常简单的，我们要做的事情，近乎就是讲 dfs 函数替换成 bfs 函数而已。
+
+
+注意，以下代码沿用我们在上一章第三小节的代码风格，visited数组是一个整型数组，-1 代表没有遍历，非负整数代表对应的连通分量的id。
+
+    // 使用 BFS 解决无向图的联通分量问题
+    public class CC {
+
+    private Graph G;
+    private int[] visited;
+    private int cccount = 0;
+
+    public CC(Graph G){
+
+        this.G = G;
+        visited = new int[G.V()];
+        for(int i = 0; i < visited.length; i ++)
+            visited[i] = -1;
+
+        for(int v = 0; v < G.V(); v ++)
+            if(visited[v] == -1){
+                // 只是这里调用 bfs 而已
+                bfs(v, cccount);
+                cccount ++;
+            }
+    }
+
+代码如下：
+
+[CCBfs](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CCBfs.java)
