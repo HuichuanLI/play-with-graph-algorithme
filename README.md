@@ -355,3 +355,23 @@ BFS : 0->6:[0, 2, 6]
 代码如下：
 
 [CCBfs](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CCBfs.java)
+
+
+## 使用 BFS 求解环检测问题
+
+同学们可以回忆一下，在上一章，我们使用 DFS 解决了环检测问题。同理的，BFS 也可以解决环检测问题：）
+
+和 DFS 的思路一样，大家可以回忆一下。使用 DFS 做环检测，只需要看到某一个顶点之前曾经遍历过，同时不是当前顶点的前一个顶点，就说明我们找到了一个环。
+
+[CycleDecetionBFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CycleDecetionBFS.java)
+
+
+## 使用 BFS 解决二分图检测问题
+
+同学们可以回忆一下，在上一章，我们使用 DFS 解决了二分图检测问题。同理的，BFS 也可以解决环检测问题：）
+
+和 DFS 的思路一样，大家可以回忆一下。使用 DFS 做二分图检测，需要不断对没有遍历过的顶点进行染色，对遍历过的顶点，查看是否矛盾。如果产生矛盾，即某条边的两个端点颜色一样，则说明整张图不可能是二分图，否则，整张图就是二分图。
+
+在这里，我首先强烈建议大家自己尝试基于 BFS，设计一个算法类，解决二分图检测问题。整个类的接口，应该和我们在学习 DFS 时设计的 BipartitionDetection 类是一样的，只不过，内部实现是使用 BFS 而不是 DFS：）
+
+[BipartitionDecetionBFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/BipartitionDecetionBFS.java)
