@@ -386,3 +386,21 @@ BFS : 0->6:[0, 2, 6]
 不可能后遍历的节点 一定是基于后遍历的节点
 
 ![photo](29.png) 
+
+无权图的最短路径
+
+[USSSPath](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/USSSPath.java)
+
+
+## 比较BFS 和 DFS 
+
+图的广度优先遍历BFS 
+
+无权图的最短路径
+
+
+![photo](30.png) 
+
+其实很相似，无非就是修改stack 和 queue
+
+其实也可以用随机使用其他模型，比如随机队列。
