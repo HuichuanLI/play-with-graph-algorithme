@@ -404,3 +404,25 @@ BFS : 0->6:[0, 2, 6]
 其实很相似，无非就是修改stack 和 queue
 
 其实也可以用随机使用其他模型，比如随机队列。
+
+
+## 图论建模
+
+算法笔试中图论问题的书写
+
+###  leetcode 785
+
+[785](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/leetcode785.java)
+
+
+### leetcode 695
+
+![photo](31.png) 
+
+四联通 ： 四个方向[[-1,0],[0,1],[1,0],[0,-1]]
+
+    x,y
+    for(d = 0;d <4;d++){
+        nextx = x + dist[d][0]
+        nexty = y + dist[d][1];
+    }
