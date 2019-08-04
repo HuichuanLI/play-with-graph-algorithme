@@ -434,3 +434,31 @@ Floodfill 算法
 
 
 其实就是从一个点就是遍历，到所有的匹配算法。
+
+
+更多的应用：填色问题
+
+魔棒其实就是：floodfill 算法
+
+
+leetcode 200 岛屿的数量
+
+leetcode 1020 飞地的数量
+
+leetcode 130 
+
+leetcode 733 图像处理
+
+leetcode 1034 边框着色
+
+leetcode 529 扫雷
+
+leetcode 827 最大人工岛
+
+
+关于leetcode 659 号问题的研究。 
+
+
+我们可以更加优化，我们不需要visited 数组。
+    
+
