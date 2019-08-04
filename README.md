@@ -426,3 +426,11 @@ BFS : 0->6:[0, 2, 6]
         nextx = x + dist[d][0]
         nexty = y + dist[d][1];
     }
+
+
+Floodfill 算法
+
+![photo](32.png) 
+
+
+其实就是从一个点就是遍历，到所有的匹配算法。
