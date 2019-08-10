@@ -461,4 +461,32 @@ leetcode 827 最大人工岛
 
 我们可以更加优化，我们不需要visited 数组。
     
+# 人工智能和图论搜素
+
+leetcode 1091
+
+
+BFS , 八联通
+[1091](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/leetcode1091.java)
+
+
+leetcode 752 Open the Lock
+
+一道智力题
+
+有两个水桶，一个装5升，一个装3升。 怎么利用这两个水桶，得到4升水？
+
+
+![photo](33.png) 
+
+
+状态压缩 10 *x + y
+
+
+
+[WaterPuzzle](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/WaterPuzzle.java)
+
+
+
+
 
