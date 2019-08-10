@@ -487,6 +487,8 @@ leetcode 752 Open the Lock
 [WaterPuzzle](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/WaterPuzzle.java)
 
 
+![photo](34.png) 
+
 
 
 
