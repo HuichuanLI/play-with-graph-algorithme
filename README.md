@@ -504,4 +504,11 @@ leetcode 752 Open the Lock
 ![photo](36.png) 
 
 
+![photo](37.png) 
+
+![photo](38.png) 
+
+![photo](39.png) 
+
+
 

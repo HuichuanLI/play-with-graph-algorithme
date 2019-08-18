@@ -26,7 +26,6 @@ public class GraphDfs {
                 dfs(w);
         }
         post.add(v);
-
     }
 
     public ArrayList<Integer> pre() {
