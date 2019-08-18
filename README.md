@@ -492,3 +492,16 @@ leetcode 752 Open the Lock
 
 
 
+# 桥
+
+
+![photo](35.png) 
+
+
+让我们一定能保证的话，可以能够保证两个联通分量，相互链接。
+
+
+![photo](36.png) 
+
+
+
