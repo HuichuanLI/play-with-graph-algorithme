@@ -511,4 +511,35 @@ leetcode 752 Open the Lock
 ![photo](39.png) 
 
 
+BFS 遍历树和DFS 遍历树
+
+能不能使用BFS遍历？
+不能
+
+### 遍历树
+
+DFS 遍历树
+![photo](40.png)
+ 
+### 前向边：在遍历树上的边
+### 后向边 ： 图中的非遍历树边可以指向自己的祖先结点
+
+
+![photo](41.png)
+### 横叉边
+
+所以必须通过DFS去寻找桥
+
+![photo](42.png)
+
+## 割点
+
+![photo](43.png)
+
+![photo](45.png)
+ 
+![photo](44.png) 
+
+
+
 
