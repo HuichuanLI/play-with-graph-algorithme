@@ -540,6 +540,17 @@ DFS 遍历树
  
 ![photo](44.png) 
 
+##哈密尔顿回路和路径
+
+![photo](46.png) 
+
+![photo](47.png) 
 
 
+![photo](48.png) 
+
+![photo](49.png) 
+
+
+NP难，我们还没有多项式的算法无法解出。
 
