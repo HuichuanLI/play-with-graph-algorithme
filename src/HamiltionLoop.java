@@ -15,22 +15,23 @@ public class HamiltionLoop {
         visited = new boolean[G.V()];
         pre = new int[G.V()];
         end = -1;
-        dfs(0, 0);
-
+        dfs(0, 0, G.V());
 
     }
 
-    private boolean dfs(int v, int parent) {
-        visited[v] = true;
+    private boolean dfs(int v, int parent, int left) {
+        left--;
         pre[v] = parent;
+        visited[v] = true;
         for (int w : G.adj(v)) {
             if (!visited[w]) {
-                if (dfs(w, v)) return true;
-            } else if (w == 0 && allVisited()) {
+                if (dfs(w, v, left)) return true;
+            } else if (w == 0 && left == 0) {
                 end = v;
                 return true;
             }
         }
+        left++;
         visited[v] = false;
         return false;
 
@@ -53,11 +54,11 @@ public class HamiltionLoop {
         return res;
     }
 
-    private boolean allVisited() {
-        for (int v = 0; v < G.V(); v++)
-            if (!visited[v]) return false;
-        return true;
-    }
+//    private boolean allVisited() {
+//        for (int v = 0; v < G.V(); v++)
+//            if (!visited[v]) return false;
+//        return true;
+//    }
 
     public static void main(String[] args) {
         Graph g = new Graph("/Users/hui/Desktop/java/play-with-graph-algorithme/g.txt");
