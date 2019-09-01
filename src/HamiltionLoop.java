@@ -24,12 +24,12 @@ public class HamiltionLoop {
         visited[v] = true;
         pre[v] = parent;
         for (int w : G.adj(v)) {
-            if (!visited[w])
+            if (!visited[w]) {
                 if (dfs(w, v)) return true;
-                else if (w == 0 && allVisited()) {
-                    end = v;
-                    return true;
-                }
+            } else if (w == 0 && allVisited()) {
+                end = v;
+                return true;
+            }
         }
         visited[v] = false;
         return false;
@@ -39,6 +39,7 @@ public class HamiltionLoop {
     public ArrayList<Integer> result() {
 
         ArrayList<Integer> res = new ArrayList<>();
+
         if (end == -1) return res;
 
         int cur = end;
@@ -53,13 +54,10 @@ public class HamiltionLoop {
     }
 
     private boolean allVisited() {
-        for (int i = 0; i < visited.length; i++) {
-            if (!visited[i])
-                return false;
-        }
+        for (int v = 0; v < G.V(); v++)
+            if (!visited[v]) return false;
         return true;
     }
-
 
     public static void main(String[] args) {
         Graph g = new Graph("/Users/hui/Desktop/java/play-with-graph-algorithme/g.txt");
