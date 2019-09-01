@@ -552,5 +552,14 @@ DFS 遍历树
 ![photo](49.png) 
 
 
-NP难，我们还没有多项式的算法无法解出。
+NP难，我们还没有多项式的算法无法解出。    
 
+暴力求解
+
+
+![photo](50.png) 
+
+回溯解法
+
+O(n!)
+[HamiltonLoop](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/HamiltionLoop.java)
