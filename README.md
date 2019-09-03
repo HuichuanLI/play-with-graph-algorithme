@@ -563,3 +563,12 @@ NP难，我们还没有多项式的算法无法解出。
 
 O(n!)
 [HamiltonLoop](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/HamiltionLoop.java)
+
+##状态压缩
+
+二维坐标用一个数字表示 
+两个桶的水量用一个两位数表示
+
+![photo](51.png) 
+
+因为是有符号的就是31位，一般不会超过31位，还不行就用63位，long类型
