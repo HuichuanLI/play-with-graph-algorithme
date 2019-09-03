@@ -1,7 +1,7 @@
 public class leetcode980 {
     private int[][] grid;
     private int R, C;
-    private boolean[][] visited;
+    private int visited;
     private int start, end;
 
     private int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
@@ -10,7 +10,7 @@ public class leetcode980 {
         this.grid = grid;
         R = grid.length;
         C = grid[0].length;
-        visited = new boolean[R][C];
+        visited = 0;
 
         int left = R * C;
 
@@ -33,20 +33,23 @@ public class leetcode980 {
 
     private int dfs(int v, int left) {
         int x = v / C, y = v % C;
-        visited[x][y] = true;
+        visited += (1 << v);
         left--;
         if (left == 0 && v == end) {
-            visited[x][y] = false;
+            visited -= (1 << v);
             return 1;
         }
 
         int res = 0;
         for (int d = 0; d < 4; d++) {
             int nextx = x + dirs[d][0], nexty = y + dirs[d][1];
-            if (inArea(nextx, nexty) && grid[nextx][nexty] == 0 && !visited[nextx][nexty])
+
+            int next = nextx * C + nexty;
+
+            if (inArea(nextx, nexty) && grid[nextx][nexty] == 0 && (visited & (1 << next)) == 0)
                 res += dfs(nextx * C + nexty, left);
         }
-        visited[x][y] = false;
+        visited -= (1 << v);
         return res;
 
     }

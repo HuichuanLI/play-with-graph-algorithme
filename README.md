@@ -569,6 +569,35 @@ O(n!)
 二维坐标用一个数字表示 
 两个桶的水量用一个两位数表示
 
+### 看是否为1
 ![photo](51.png) 
 
-因为是有符号的就是31位，一般不会超过31位，还不行就用63位，long类型
+因为是有符号的就是31位，一般不会超过31位，还不行就用63位，long类型              
+
+![photo](52.png) 
+### 修改数值
+
+![photo](54.png) 
+反之做减法
+
+![photo](55.png)
+
+![photo](56.png) 
+
+位运算
+
+####基于状态压缩的哈密尔顿路径
+[HamiltonLoop](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/HamiltionLoopOptimsation.java)
+
+
+###记忆化搜说
+
+
+ ![photo](57.png) 
+
+
+
+
+
+
+
