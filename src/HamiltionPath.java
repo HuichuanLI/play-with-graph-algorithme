@@ -1,21 +1,25 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class HamiltionLoop {
+public class HamiltionPath {
 
 
     private GraphInterface G;
     private boolean[] visited;
     private int[] pre;
     private int end;
+    private int s;
 
-    public HamiltionLoop(GraphInterface G) {
+
+
+    public HamiltionPath(GraphInterface G,int s) {
 
         this.G = G;
+        this.s = s;
         visited = new boolean[G.V()];
         pre = new int[G.V()];
         end = -1;
-        dfs(0, 0, G.V());
+        dfs(s, s, G.V());
 
     }
 
@@ -26,7 +30,7 @@ public class HamiltionLoop {
         for (int w : G.adj(v)) {
             if (!visited[w]) {
                 if (dfs(w, v, left)) return true;
-            } else if (w == 0 && left == 0) {
+            } else if (left == 0) {
                 end = v;
                 return true;
             }
@@ -61,11 +65,11 @@ public class HamiltionLoop {
 
     public static void main(String[] args) {
         Graph g = new Graph("/Users/hui/Desktop/java/play-with-graph-algorithme/g.txt");
-        HamiltionLoop hl = new HamiltionLoop(g);
+        HamiltionPath hl = new HamiltionPath(g,0);
         System.out.println(hl.result());
 
-        Graph g2 = new Graph("/Users/hui/Desktop/java/play-with-graph-algorithme/g2.txt");
-        HamiltionLoop h2 = new HamiltionLoop(g2);
+
+        HamiltionPath h2 = new HamiltionPath(g,1);
         System.out.println(h2.result());
     }
 }
