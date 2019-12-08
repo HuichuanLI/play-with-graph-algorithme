@@ -4,13 +4,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.LinkedList;
 
-public class AdjMatrix {
+public class AdjList {
     private int V;
     private int E;
-    private int[][] adj;
+    private LinkedList<Integer>[] adj;
 
-    public AdjMatrix(String filename) {
+    public AdjList(String filename) {
 
         File file = new File(filename);
 
@@ -18,7 +19,9 @@ public class AdjMatrix {
 
             V = scanner.nextInt();
             if (V < 0) throw new IllegalArgumentException("V must be non-negative");
-            adj = new int[V][V];
+            adj = new LinkedList[V];
+            for (int i = 0; i < V; i++)
+                adj[i] = new LinkedList<>();
 
             E = scanner.nextInt();
             if (E < 0) throw new IllegalArgumentException("E must be non-negative");
@@ -31,10 +34,10 @@ public class AdjMatrix {
                 // 没有自环边
                 if (a == b) throw new IllegalArgumentException("Self Loop is Detected!");
                 // 没有平行边
-                if (adj[a][b] == 1) throw new IllegalArgumentException("Parallel Edges are Detected!");
+                if (adj[a].contains(b)) throw new IllegalArgumentException("Parallel Edges are Detected!");
 
-                adj[a][b] = 1;
-                adj[b][a] = 1;
+                adj[a].add(b);
+                adj[b].add(a);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,16 +55,12 @@ public class AdjMatrix {
     public boolean hasEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
-        return adj[v][w] == 1;
+        return adj[v].contains(w);
     }
 
-    public ArrayList<Integer> adj(int v) {
+    public LinkedList<Integer> adj(int v) {
         validateVertex(v);
-        ArrayList<Integer> res = new ArrayList<>();
-        for (int i = 0; i < V; i++)
-            if (adj[v][i] == 1)
-                res.add(i);
-        return res;
+        return adj[v];
     }
 
 
@@ -75,8 +74,9 @@ public class AdjMatrix {
 
         sb.append(String.format("V = %d, E = %d\n", V, E));
         for (int i = 0; i < V; i++) {
-            for (int j = 0; j < V; j++)
-                sb.append(String.format("%d ", adj[i][j]));
+            sb.append(String.format("%d : ", i));
+            for (int w : adj[i])
+                sb.append(String.format("%d ", w));
             sb.append('\n');
         }
         return sb.toString();
@@ -89,8 +89,8 @@ public class AdjMatrix {
 
     public static void main(String[] args) {
 
-        AdjMatrix adjMatrix = new AdjMatrix("/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter01Graph_Basics/g.txt");
-        System.out.print(adjMatrix);
+        AdjList adjList = new AdjList("/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter01Graph_Basics/g.txt");
+        System.out.print(adjList);
     }
 
 }
