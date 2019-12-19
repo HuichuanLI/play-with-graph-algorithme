@@ -1,8 +1,10 @@
-package Chapter02GraphDFS;
+package Chapter03GraphDFSApplications;
 
+
+import Chapter02GraphDFS.AdjSet;
+import Chapter02GraphDFS.Graph;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 public class GraphDFS {
     private ArrayList<Integer> order = new ArrayList<>();

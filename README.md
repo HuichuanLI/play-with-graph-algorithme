@@ -1,15 +1,15 @@
 # play-with-graph 玩转图论算法
 ##  第一个问题关于图的表示
-![photo](1.png)
+![photo](src/photo/1.png)
 
 # 图的表示
 	
-![photo](2.png)
+![photo](src/photo/2.png)
 ## 社交网路
-![photo](3.png)
+![photo](src/photo/3.png)
 
 
-![photo](4.png)
+![photo](src/photo/4.png)
 
 ## 图的分类算法
 无向无权图 
@@ -21,13 +21,13 @@
 # 图的基本概念
 ## 	无向无权图
 
-![photo](5.png)
+![photo](src/photo/5.png)
 
-![photo](6.png)
+![photo](src/photo/6.png)
 
 没有自环边，没有平行边， 称为简单图
 
-![photo](7.png)
+![photo](src/photo/7.png)
 
 ### 联通分量 
 	一个图的所有节占不一定全部相连 
@@ -39,11 +39,11 @@
 	联通的无环图就是树
 
 
-![photo](8.png)
+![photo](src/photo/8.png)
 
 ## 包含所有顶占边数V·1， 一定是联通图的生成树吗？
 
-![photo](9.png)
+![photo](src/photo/9.png)
 
 
 	不是！
@@ -52,21 +52,21 @@
 
 	没有
 
-![photo](10.png)
+![photo](src/photo/10.png)
 
 ### 一个顶点的度 
 
-![photo](11.png)
+![photo](src/photo/11.png)
 
 ##  邻接矩阵
 
-![photo](12.png)
+![photo](src/photo/12.png)
 
 [实现code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AdjMatrix.java)
 
 复杂度
 
-![photo](13.png)
+![photo](src/photo/13.png)
 
 	可以优化空间复杂度 O(V2)
 	如果一个图有3000个节点
@@ -75,13 +75,13 @@
 
 ## 稀疏图和稠密图
 
-![photo](14.png)
-![photo](15.png)
+![photo](src/photo/14.png)
+![photo](src/photo/15.png)
 稠密图
-![photo](16.png)
+![photo](src/photo/16.png)
 平均每个度比较最大的度
 ## 邻接表
-![photo](17.png)
+![photo](src/photo/17.png)
 [实现code](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/AdjList.java)
 
 ## 空间复杂度
@@ -117,7 +117,7 @@ hash 表 HashSet O(1)
 
 
 ## 算法复杂度
-![photo](18.png)
+![photo](src/photo/18.png)
 
 我们可以看出来邻接表，在其他方面都是优于其他的表示方法。
 
@@ -131,7 +131,7 @@ hash 表 HashSet O(1)
 
 比如树的遍历: 
 
-![photo](19.png)
+![photo](src/photo/19.png)
 
 很多算法本质就是遍历，其实看算法中是否有关。
 
@@ -143,7 +143,7 @@ hash 表 HashSet O(1)
 
 其实图论算法都是从树的遍历的引申，其实很像，其实底层实现很想。
 
-![photo](20.png)
+![photo](src/photo/20.png)
 
 其实对应n叉树，很像。
 
@@ -152,11 +152,11 @@ hash 表 HashSet O(1)
 
 回归二叉树的遍历
 
-![photo](21.png)
+![photo](src/photo/21.png)
 
 类似的 我们可以推导后续遍历
 
-![photo](22.png)        
+![photo](src/photo/22.png)        
 
 
 
@@ -228,7 +228,7 @@ hash 表 HashSet O(1)
 
 ## 无向图的联通分量
 
-![photo](23.png) 
+![photo](src/photo/23.png) 
 
 代码：可以通过深度优先遍历，查看哪些是联通分量
 
@@ -242,7 +242,7 @@ hash 表 HashSet O(1)
 
 路径怎么求 
 
-![photo](24.png) 
+![photo](src/photo/24.png) 
 
 对应这种问题，我们向对来说，只能求从0到那个节点有路径，从某个点出发，到任意位置的路径，单源路径。
 
@@ -273,15 +273,15 @@ hash 表 HashSet O(1)
 
 ## 二分图检测
 
-![photo](25.png) 
+![photo](src/photo/25.png) 
 
 
-![photo](26.png) 
+![photo](src/photo/26.png) 
 
 左右两边是一样的，其实无非就是染色。
 
 
-![photo](27.png) 
+![photo](src/photo/27.png) 
  
 [BiparitionDecetion](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/BipartitionDecetion.java)
 
@@ -313,7 +313,7 @@ NP 难 不能再多项式的问题是解决不了，但是无法证明是指数�
 
 ## 路径问题
 
-![photo](28.png) 
+![photo](src/photo/28.png) 
 
 
 DFS : 0->6:[0, 1, 3, 2, 6]
@@ -385,7 +385,7 @@ BFS : 0->6:[0, 2, 6]
 
 不可能后遍历的节点 一定是基于后遍历的节点
 
-![photo](29.png) 
+![photo](src/photo/29.png) 
 
 无权图的最短路径
 
@@ -399,7 +399,7 @@ BFS : 0->6:[0, 2, 6]
 无权图的最短路径
 
 
-![photo](30.png) 
+![photo](src/photo/30.png) 
 
 其实很相似，无非就是修改stack 和 queue
 
@@ -417,7 +417,7 @@ BFS : 0->6:[0, 2, 6]
 
 ### leetcode 695
 
-![photo](31.png) 
+![photo](src/photo/31.png) 
 
 四联通 ： 四个方向[[-1,0],[0,1],[1,0],[0,-1]]
 
@@ -430,7 +430,7 @@ BFS : 0->6:[0, 2, 6]
 
 Floodfill 算法
 
-![photo](32.png) 
+![photo](src/photo/32.png) 
 
 
 其实就是从一个点就是遍历，到所有的匹配算法。
@@ -477,7 +477,7 @@ leetcode 752 Open the Lock
 有两个水桶，一个装5升，一个装3升。 怎么利用这两个水桶，得到4升水？
 
 
-![photo](33.png) 
+![photo](src/photo/33.png) 
 
 
 状态压缩 10 *x + y
@@ -487,7 +487,7 @@ leetcode 752 Open the Lock
 [WaterPuzzle](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/WaterPuzzle.java)
 
 
-![photo](34.png) 
+![photo](src/photo/34.png) 
 
 
 
@@ -495,20 +495,20 @@ leetcode 752 Open the Lock
 # 桥
 
 
-![photo](35.png) 
+![photo](src/photo/35.png) 
 
 
 让我们一定能保证的话，可以能够保证两个联通分量，相互链接。
 
 
-![photo](36.png) 
+![photo](src/photo/36.png) 
 
 
-![photo](37.png) 
+![photo](src/photo/37.png) 
 
-![photo](38.png) 
+![photo](src/photo/38.png) 
 
-![photo](39.png) 
+![photo](src/photo/39.png) 
 
 
 BFS 遍历树和DFS 遍历树
@@ -519,37 +519,37 @@ BFS 遍历树和DFS 遍历树
 ### 遍历树
 
 DFS 遍历树
-![photo](40.png)
+![photo](src/photo/40.png)
  
 ### 前向边：在遍历树上的边
 ### 后向边 ： 图中的非遍历树边可以指向自己的祖先结点
 
 
-![photo](41.png)
+![photo](src/photo/41.png)
 ### 横叉边
 
 所以必须通过DFS去寻找桥
 
-![photo](42.png)
+![photo](src/photo/42.png)
 
 ## 割点
 
-![photo](43.png)
+![photo](src/photo/43.png)
 
-![photo](45.png)
+![photo](src/photo/45.png)
  
-![photo](44.png) 
+![photo](src/photo/44.png) 
 
 ##哈密尔顿回路和路径
 
-![photo](46.png) 
+![photo](src/photo/46.png) 
 
-![photo](47.png) 
+![photo](src/photo/47.png) 
 
 
-![photo](48.png) 
+![photo](src/photo/48.png) 
 
-![photo](49.png) 
+![photo](src/photo/49.png) 
 
 
 NP难，我们还没有多项式的算法无法解出。    
@@ -557,7 +557,7 @@ NP难，我们还没有多项式的算法无法解出。
 暴力求解
 
 
-![photo](50.png) 
+![photo](src/photo/50.png) 
 
 回溯解法
 
@@ -570,19 +570,19 @@ O(n!)
 两个桶的水量用一个两位数表示
 
 ### 看是否为1
-![photo](51.png) 
+![photo](src/photo/51.png) 
 
 因为是有符号的就是31位，一般不会超过31位，还不行就用63位，long类型              
 
-![photo](52.png) 
+![photo](src/photo/52.png) 
 ### 修改数值
 
-![photo](54.png) 
+![photo](src/photo/54.png) 
 反之做减法
 
-![photo](55.png)
+![photo](src/photo/55.png)
 
-![photo](56.png) 
+![photo](src/photo/56.png) 
 
 位运算
 
@@ -593,9 +593,9 @@ O(n!)
 ###记忆化搜说
 
 
-![photo](57.png)
+![photo](src/photo/57.png)
   
-![photo](59.png) 
+![photo](src/photo/59.png) 
 
 ####O(n!) vs O(n*2^n)
 
@@ -609,11 +609,11 @@ O(n!)
 一个点出发，沿着边行走，经过每个边恰好一次，之后再回到出发点
 
 
-![photo](60.png)
+![photo](src/photo/60.png)
   
-![photo](61.png) 
+![photo](src/photo/61.png) 
 
-![photo](62.png) 
+![photo](src/photo/62.png) 
 
 ### 寻找欧拉回路三种算法
 
@@ -624,20 +624,20 @@ O(n!)
 
 #### Hierho1zer算法详解
 
-![photo](63.png)
+![photo](src/photo/63.png)
 
-![photo](64.png)
+![photo](src/photo/64.png)
 
-![photo](65.png) 
+![photo](src/photo/65.png) 
  
  
  # 带权图
  
  
-![photo](66.png) 
+![photo](src/photo/66.png) 
  
  
-![photo](67.png) 
+![photo](src/photo/67.png) 
  
  
  
@@ -646,6 +646,6 @@ O(n!)
 
 切分定理
 
-![photo](68.png) 
+![photo](src/photo/68.png) 
 
 横切边中的最短边，属于最小生成树
