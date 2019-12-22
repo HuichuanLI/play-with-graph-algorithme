@@ -4,6 +4,10 @@ package Chapter05GraphModellingAndFloodFill;
  * Author : lihuichuan
  * Time   : 2019/12/22
  */
+
+/// Floodfill
+/// Time Complexity: O(n * m)
+/// Space Complexity: O(n * m)
 public class Leetcode130 {
     private int d[][] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
     private int m, n;
