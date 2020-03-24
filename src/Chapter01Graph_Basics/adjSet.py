@@ -14,7 +14,7 @@ class adjList:
 
         if self._E < 0:
             raise ValueError('E must be non-negative')
-        self._adj = [[] for _ in range(self._V)]
+        self._adj = [set() for _ in range(self._V)]
 
         for each_line in lines[1:]:
             a, b = (int(i) for i in each_line.split())
@@ -24,11 +24,11 @@ class adjList:
             if a == b:
                 raise ValueError('Self-Loop is detected!')
 
-            if self._adj[a].count(b):
+            if b in self._adj[a]:
                 raise ValueError('Paralles edges are detected!')
 
-            self._adj[a].append(b)
-            self._adj[b].append(a)
+            self._adj[a].add(b)
+            self._adj[b].add(a)
 
     @property
     def V(self):
