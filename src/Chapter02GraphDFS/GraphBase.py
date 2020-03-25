@@ -1,4 +1,4 @@
-class Graph:
+class GraphBase:
     def E(self):
         raise NotImplementedError
 

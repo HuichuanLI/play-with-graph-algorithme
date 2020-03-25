@@ -1,7 +1,7 @@
-from Graph import Graph
+from GraphBase import GraphBase
 
 
-class adjSet(Graph):
+class adjSet(GraphBase):
     def __init__(self, filename):
         lines = None
         with open(filename, 'r') as f:
@@ -69,7 +69,7 @@ class adjSet(Graph):
 
 if __name__ == '__main__':
     filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter01Graph_Basics/g.txt'
-    adj_list = adjList(filename)
+    adj_list = adjSet(filename)
     print(adj_list)
     print(adj_list.V)
     print(adj_list.E)
