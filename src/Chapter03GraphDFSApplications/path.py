@@ -1,11 +1,11 @@
-from play_with_graph_algorithms.chapter02.adj_set import AdjSet as Graph
+from Chapter02GraphDFS.adjSet import adjSet as Graph
 
 
 class Path:
 
     def __init__(self, G, s, t, recursive=True):
-        G.validate_vertex(s)
-        G.validate_vertex(t)
+        G._validate_vertex(s)
+        G._validate_vertex(t)
         self._G = G
         self._s = s
         self._t = t
@@ -16,7 +16,7 @@ class Path:
             self._dfs_recursive(s, s)
         else:
             self._dfs_iteration(s, s)
-        print(self._visited)
+        # print(self._visited)
 
     def _dfs_recursive(self, v, parent):
         self._visited[v] = True
@@ -64,7 +64,7 @@ class Path:
 
 
 if __name__ == '__main__':
-    filename = 'play_with_graph_algorithms/chapter04/g2.txt'
+    filename = "/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt"
     g = Graph(filename)
 
     path = Path(g, 0, 6)
