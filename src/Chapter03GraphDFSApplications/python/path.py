@@ -64,7 +64,7 @@ class Path:
 
 
 if __name__ == '__main__':
-    filename = "/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt"
+    filename = "/Chapter03GraphDFSApplications/g.txt"
     g = Graph(filename)
 
     path = Path(g, 0, 6)

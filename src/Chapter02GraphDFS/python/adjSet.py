@@ -1,4 +1,4 @@
-from GraphBase import GraphBase
+from Chapter02GraphDFS.python.GraphBase import GraphBase
 
 
 class adjSet(GraphBase):

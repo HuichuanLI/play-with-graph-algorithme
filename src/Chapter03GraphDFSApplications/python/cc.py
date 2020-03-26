@@ -1,4 +1,4 @@
-from Chapter02GraphDFS.adjSet import adjSet as Graph
+from Chapter02GraphDFS.python.adjSet import adjSet as Graph
 
 
 class CC:
@@ -59,25 +59,25 @@ class CC:
 
 
 if __name__ == '__main__':
-    filename = "/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt"
+    filename = "/Chapter03GraphDFSApplications/g.txt"
     g = Graph(filename)
     cc = CC(g)
     print(cc.ccount)
     print(cc.groups)
 
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g2.txt'
+    filename = '/Chapter03GraphDFSApplications/g2.txt'
     g = Graph(filename)
     cc = CC(g)
     print(cc.ccount)
     print(cc.groups)
 
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt'
+    filename = '/Chapter03GraphDFSApplications/g.txt'
     g = Graph(filename)
     cc = CC(g, recursive=False)
     print(cc.ccount)
     print(cc.groups)
 
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g2.txt'
+    filename = '/Chapter03GraphDFSApplications/g2.txt'
     g = Graph(filename)
     cc = CC(g, recursive=False)
     print(cc.ccount)

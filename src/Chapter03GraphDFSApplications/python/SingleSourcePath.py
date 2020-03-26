@@ -1,4 +1,4 @@
-from Chapter02GraphDFS.adjSet import adjSet as Graph
+from Chapter02GraphDFS.python.adjSet import adjSet as Graph
 
 
 class SingleSourcePath:
@@ -65,7 +65,7 @@ class SingleSourcePath:
 
 
 if __name__ == '__main__':
-    filename = "/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt"
+    filename = "/Chapter03GraphDFSApplications/g.txt"
     g = Graph(filename)
 
     single_source_path = SingleSourcePath(g, 0)

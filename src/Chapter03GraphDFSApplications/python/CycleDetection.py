@@ -1,4 +1,4 @@
-from adjSet import adjSet as Graph
+from Chapter02GraphDFS.python.adjSet import adjSet as Graph
 
 
 class CycleDetection:
@@ -58,7 +58,7 @@ class CycleDetection:
 
 if __name__ == '__main__':
     print('For one block, recursive:')
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt'
+    filename = '/Chapter03GraphDFSApplications/g.txt'
     g = Graph(filename)
     graph_dfs = CycleDetection(g)
     print(graph_dfs.hascycle)
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     print('*' * 40)
 
     print('For two blocks, recursive:')
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g2.txt'
+    filename = '/Chapter03GraphDFSApplications/g2.txt'
     g = Graph(filename)
     graph_dfs = CycleDetection(g)
     print(graph_dfs.hascycle)
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     print('*' * 40)
 
     print('For one block, iteration:')
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g.txt'
+    filename = '/Chapter03GraphDFSApplications/g.txt'
     g = Graph(filename)
     graph_dfs = CycleDetection(g, recursive=False)
     print(graph_dfs.hascycle)
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     print('*' * 40)
 
     print('For two blocks, iteration:')
-    filename = '/Users/hui/Desktop/java/play-with-graph-algorithme/src/Chapter03GraphDFSApplications/g2.txt'
+    filename = '/Chapter03GraphDFSApplications/g2.txt'
     g = Graph(filename)
     graph_dfs = CycleDetection(g, recursive=False)
     print(graph_dfs.hascycle)
