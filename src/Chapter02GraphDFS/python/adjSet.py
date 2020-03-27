@@ -44,7 +44,7 @@ class adjSet(GraphBase):
     def has_edge(self, v, w):
         self._validate_vertex(v)
         self._validate_vertex(w)
-        return self._adj[v].count(w)
+        return w in self._adj[v]
 
     def adj(self, v):
         self._validate_vertex(v)
