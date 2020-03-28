@@ -661,3 +661,30 @@ O(ElogE)最大的时间其实就是排序边
 ![photo](src/photo/69.png) 
 
 O(ElogE) 最大的时间其实就是排序边
+
+
+## 最短路径
+
+- 只有正权边
+### Dijkstra算法
+
+![photo](src/photo/70.png) 
+
+![photo](src/photo/71.png) 
+O(V^2)
+
+### Dijkstra算法优化
+
+![photo](src/photo/72.png) 
+O(ElogE)
+
+### Bellman-Ford算法
+- 松弛操作
+
+![photo](src/photo/74.png)
+ 
+![photo](src/photo/73.png) 
+
+- 负权环
+
+![photo](src/photo/75.png) 
