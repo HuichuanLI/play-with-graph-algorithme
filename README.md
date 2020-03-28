@@ -659,3 +659,5 @@ O(ElogE)最大的时间其实就是排序边
 ### Prim 算法
 
 ![photo](src/photo/69.png) 
+
+O(ElogE) 最大的时间其实就是排序边
