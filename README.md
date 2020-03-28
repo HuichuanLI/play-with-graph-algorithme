@@ -366,7 +366,7 @@ BFS : 0->6:[0, 2, 6]
 [CycleDecetionBFS](https://github.com/HuichuanLI/play-with-graph-algorithme/blob/master/src/CycleDecetionBFS.java)
 
 
-## 使用 BFS 解决二分图检测问题
+## 使用 BFS 解决二分图检测问题 
 
 可以回忆一下，在上一章，我们使用 DFS 解决了二分图检测问题。同理的，BFS 也可以解决环检测问题：）
 
@@ -617,12 +617,12 @@ O(n!)
 
 ### 寻找欧拉回路三种算法
 
-#### 回溯法  指数级
+#### 回溯法  指数级 O(n!)
 #### Fleury算法 选择走不走桥的边 贪心算法比较好
 ##### O((v+E)^2)
 ##### O(E^2)
 
-#### Hierho1zer算法详解
+#### Hierholzer算法详解
 
 ![photo](src/photo/63.png)
 

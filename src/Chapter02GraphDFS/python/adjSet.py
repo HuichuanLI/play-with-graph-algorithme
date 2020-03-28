@@ -57,6 +57,15 @@ class adjSet(GraphBase):
         if v < 0 or v >= self._V:
             raise ValueError('vertex ' + v + ' is invalid')
 
+    def remove_edge(self, v, w):
+        self._validate_vertex(v)
+        self._validate_vertex(w)
+        if w in self._adj[v]:
+            self._adj[v].remove(w)
+        if v in self._adj[w]:
+            self._adj[w].remove(v)
+
+
     def __str__(self):
         res = ['V = {}, E = {}'.format(self._V, self._E)]
         for v in range(self._V):
