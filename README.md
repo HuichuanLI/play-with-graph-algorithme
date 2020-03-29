@@ -755,3 +755,41 @@ O(ElogE)
 
 不能进行环检测
 
+### 有向图的联通分量
+
+强连通分量，在一个强连通分量中， 任何两点都可达
+
+![photo](src/photo/91.png)
+
+
+将所有强连通分量看做一个点 得到的有向图一定是DAG 
+
+### Kosaraju 算法 --求强联通分量
+
+![photo](src/photo/92.png)
+
+![photo](src/photo/93.png)
+
+![photo](src/photo/94.png)
+
+![photo](src/photo/95.png)
+
+## 网络流
+
+![photo](src/photo/96.png)
+
+![photo](src/photo/97.png)
+
+### Ford-Fulkerson思想
+
+![photo](src/photo/98.png)
+
+增广路径：就是所有的残量大于0，到终点
+
+
+![photo](src/photo/99.png)
+
+### Edmonds-Karp算法
+
+
+![photo](src/photo/100.png)
