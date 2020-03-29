@@ -746,3 +746,12 @@ O(ElogE)
 ![photo](src/photo/87.png)
 
 ![photo](src/photo/88.png)
+
+拓扑排序另一种算法：DFS的后序遍历
+
+![photo](src/photo/89.png)
+
+![photo](src/photo/90.png)
+
+不能进行环检测
+
