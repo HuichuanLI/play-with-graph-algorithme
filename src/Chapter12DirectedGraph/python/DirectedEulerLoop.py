@@ -49,11 +49,11 @@ class DirectedEulerLoop:
 
 
 if __name__ == '__main__':
-    filename = '../ug.txt'
-    g = Graph(filename, directed=True)
-    directed_eluer_loop = DirectedEulerLoop(g)
-    print(directed_eluer_loop.result())
-    print(directed_eluer_loop.has_euler_loop())
+    # filename = '../ug.txt'
+    # g = Graph(filename, directed=True)
+    # directed_eluer_loop = DirectedEulerLoop(g)
+    # print(directed_eluer_loop.result())
+    # print(directed_eluer_loop.has_euler_loop())
 
     filename = '../ug2.txt'
     g = Graph(filename, directed=True)

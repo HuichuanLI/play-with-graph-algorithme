@@ -736,3 +736,13 @@ O(ElogE)
 
 ### Euler回路 出度和入度
 ![photo](src/photo/85.png)
+
+### 拓扑排序(*****)
+
+![photo](src/photo/86.png)
+
+使用队列
+
+![photo](src/photo/87.png)
+
+![photo](src/photo/88.png)
