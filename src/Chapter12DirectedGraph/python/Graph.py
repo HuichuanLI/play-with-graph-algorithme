@@ -126,9 +126,9 @@ if __name__ == '__main__':
 
     print(g)
 
+    for v in range(g.V):
+        print(g.indegree(v), g.outdegree(v))
+
     g = Graph(filename, directed=False)
 
     print(g)
-
-    # for v in range(g.V):
-    #     print(g.indegree(v), g.outdegree(v))

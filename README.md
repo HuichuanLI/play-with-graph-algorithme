@@ -723,3 +723,16 @@ O(ElogE)
 - DFS
 - BFS
 - Dijsktra/Floyd/Bellman-Ford
+
+### 有向图环检测 && DAG
+
+![photo](src/photo/83.png)
+
+判断是否在路径上
+
+[CycleDirection](./src/Chapter12DirectedGraph/python/DirectedCycleDetection.py)
+
+![photo](src/photo/84.png)
+
+### Euler回路 出度和入度
+![photo](src/photo/85.png)
