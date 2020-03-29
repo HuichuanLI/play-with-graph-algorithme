@@ -708,4 +708,18 @@ O(ElogE)
 ![photo](src/photo/82.png)
 
 
- 
+## 有向图
+- 任务调度
+- 学习计划
+- 互联网链接
+
+### 有向图算法
+#### 我们不考虑算法
+- floodfill
+- 最小生成树
+- 桥和割点
+- 二分图检测
+#### 不需要改变算法
+- DFS
+- BFS
+- Dijsktra/Floyd/Bellman-Ford
