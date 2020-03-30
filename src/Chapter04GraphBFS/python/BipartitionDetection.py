@@ -36,6 +36,9 @@ class BiPartitionDetection:
     def is_bi_partition_graph(self):
         return self._is_bi_partition_graph
 
+    def colors(self):
+        return self._colors
+
 
 if __name__ == '__main__':
     filename = '../g.txt'
@@ -58,4 +61,3 @@ if __name__ == '__main__':
     print('Is this a bi-partition graph? : {}'.format(
         bi_partition_detection.is_bi_partition_graph()),
     )
-
