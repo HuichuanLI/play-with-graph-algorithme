@@ -793,3 +793,13 @@ O(ElogE)
 
 
 ![photo](src/photo/100.png)
+
+![photo](src/photo/101.png)
+
+## 最大流算法建模
+
+![photo](src/photo/102.png)
+
+
+![photo](src/photo/103.png)
+
